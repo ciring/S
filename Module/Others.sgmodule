@@ -26,13 +26,8 @@ URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),REJ
 URL-REGEX,https://api.bilibili.com/x/v2/dm/ad,REJECT
 
 [URL Rewrite]
-# > tiktok解锁(*.tiktokv.com, *.byteoversea.com, *.musical.ly, *.snssdk.com)
-(?<=_region=)CN(?=&) JP 307
-(?<=&app_version=)15..(?=.?.?&) 1 307
-(?<=\?version_code=)15..(?=.?.?&) 1 307
 
-# > tiktok去水印(*.amemv.com, *.snssdk.com)
-^https://aweme-eagle(.*)\.snssdk\.com/aweme/v2/ https://aweme-eagle$1.snssdk.com/aweme/v1/ 302
+
 
 [Script]
 # > YouTube去广告(*.googlevideo.com, *.youtube.com, youtubei.googleapis.com)
