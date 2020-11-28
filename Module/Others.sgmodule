@@ -44,9 +44,6 @@ zhihu feed = type=http-response,requires-body=1,max-size=0,pattern=https://api.z
 zhihu recommend = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/topstory/recommend,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20recommend.js
 zhihu answer = type=http-response,requires-body=1,max-size=0,pattern=https://api.zhihu.com/v4/questions,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20answer.js
 
-# > tiktok去水印(*.amemv.com, *.snssdk.com)
-Aweme = type=http-request,pattern=https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post),script-path=https://Choler.github.io/Surge/Script/Aweme.js
-Aweme = type=http-response,pattern=https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post),requires-body=true,script-path=https://Choler.github.io/Surge/Script/Aweme.js
 
 # > B站去广告(www.bilibili.com, api.bilibili.com, app.bilibili.com, api.live.bilibili.com)
 bilibili space = type=http-response,requires-body=1,max-size=0,pattern=https://app.bilibili.com/x/v2/space\?access_key,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20space.js
